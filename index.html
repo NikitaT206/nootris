@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Nootris</title>
+</head>
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="./images/logo.svg"/>
+
+    <nav class="header__navigation">
+      <a class="header__navigation-link" href="#faq">FAQ</a>
+      <a class="header__navigation-link" href="#payment">Оплата и доставка</a>
+      <a class="header__navigation-link" href="#purchase">Возврат</a>
+      <a class="header__navigation-link" href="#research">Исследования</a>
+      <a class="header__navigation-link" href="#personal">Личный кабинет</a>
+      <a class="header__navigation-link" href=”tel:88(800)600-09-90”>8 8 (800) 600-09-90</a>
+    </nav>
+
+    <div class="header__shopping-cart-container">
+      <a class="header__shopping-cart-link" href="#shopping-cart"></a>
+      <div class="header__number-of-goods">1</div>
+    </div>
+
+    <button class="header__burger-button"></button>
+  </header>
+
+  <div class="burger-menu burger-menu_hidden">
+    <div class="burger-menu__container">
+      <button class="burger-menu__close-button"></button>
+      <nav class="burger-menu__navigation">
+        <a class="burger-menu-link" href="#faq">FAQ</a>
+        <a class="burger-menu-link" href="#payment">Оплата и доставка</a>
+        <a class="burger-menu-link" href="#purchase">Возврат</a>
+        <a class="burger-menu-link" href="#research">Исследования</a>
+        <a class="burger-menu-link" href="#personal">Личный кабинет</a>
+        <a class="burger-menu-link" href=”tel:88(800)600-09-90”>8 8 (800) 600-09-90</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <section class="promo">
+      <div class="promo__background"></div>
+      <img class="promo__image" src="./images/Mask Group.png"/>
+      <h1 class="promo__title">АКТИВИРУЙ ИММУНИТЕТ!</h1>
+      <p class="promo__subtitle">Всего пять секунд в&nbsp;день помогут укрепить иммунитет и&nbsp;повысить защитные силы организма</p>
+      <div class="promo__text-container">
+        <h3 class="promo__text-title">NOOTRIS ПОМОГАЕТ</h3>
+        <p class="promo__text-subtitle">Вашему организму во&nbsp;время пандемии и&nbsp;сезонных простуд</p>
+      </div>
+    </section>
+
+    <section class="discount">
+      <h2 class="discount__title">ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА
+        <span class="discount__title discount__title_highlight">СО СКИДКОЙ -15% ПЕРВЫМ!</span>
+      </h2>
+
+      <div class="discount__price-container">
+        <span class="discount__price discount__price_old">750₽</span>
+        <span class="discount__price">690₽</span>
+      </div>
+
+      <div class="discount__cards-container">
+
+        <div class="discount__card">
+          <img class="discount__card-image" src="./images/ginger.png"/>
+          <p class="discount__card-description">Содержит 
+            <span class="discount__card-description discount__card-description_highlight">имбирь</span>
+          </p>
+        </div>
+
+        <div class="discount__card">
+          <img class="discount__card-image discount__card-image_large" src="./images/nootris-2.png"/>
+          <p class="discount__card-description-large">+ Бесплатная доставка</p>
+          <p class="discount__card-description-large discount__card-description-large_highlight">Специальная цена</p>
+
+        </div>
+
+        <div class="discount__card">
+          <img class="discount__card-image" src="./images/vorus.png"/>
+          <p class="discount__card-description">Нейтрализует
+            <span class="discount__card-description discount__card-description_highlight">вирусы</span>
+          </p>
+        </div>
+
+      </div>
+      <a class="discount__order-button" href="#make-order">Оформить заказ!</a>
+
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>

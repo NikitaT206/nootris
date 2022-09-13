@@ -1,0 +1,73 @@
+@import url(./fonts/fonts.css);
+@import url(./blocks/header.css);
+@import url(./blocks/promo.css);
+@import url(./blocks/discount.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik";
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 100;
+  transition: .4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.229);
+}
+
+.burger-menu_hidden {
+  background-color: transparent;
+  transform: translate(100vw);
+}
+
+.burger-menu__container {
+  width: 50vw;
+  height: 100vh;
+  background-color: #111111;
+  padding: 70px 20px;
+  position: relative;
+}
+
+.burger-menu__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.burger-menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.burger-menu__close-button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  background-image: url(./images/close.png);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.main {
+  width: 100vw;
+  overflow: hidden;
+}

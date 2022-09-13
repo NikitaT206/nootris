@@ -1,0 +1,275 @@
+.discount {
+  min-height: calc(100vh - 870px);
+  padding: 113px 0 112px 0;
+  background-color: #111111;
+}
+
+.discount__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57px;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 79px;
+}
+
+.discount__title_highlight {
+  color: #FCB500;
+}
+
+.discount__price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 52px;
+  width: max-content;
+  text-align: center;
+  position: relative;
+  left: 23px;
+}
+
+.discount__price {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55px;
+  color: white;
+  width: 190px;
+  position: relative;
+}
+
+.discount__price_old {
+  color: #ADADAD;
+  font-size: 36px;
+  line-height: 43px;
+  width: 106px;
+  position: relative;
+  display: block;
+}
+
+.discount__price_old:before {
+  content: "";
+  width: 112px;
+  height: 2px;
+  background-color: #ADADAD;
+  top: 55%;
+  left: -3px;
+  transform: translate(0%, -55%);
+  z-index: 10;
+  position: absolute;
+}
+
+.discount__cards-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1087px;
+  width: 80%;
+  margin: 0 auto 66px;
+}
+
+.discount__card {
+  width: max-content;
+}
+
+.discount__card-image {
+  display: block;
+  margin-bottom: 81px;
+  width: 192px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discount__card-image_large {
+  width: max-content;
+  margin-bottom: 44px;
+}
+
+.discount__card-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  max-width: min-content;
+  margin: 0 auto;
+}
+
+.discount__card-description_highlight {
+  color: #FCB500;
+}
+
+.discount__card-description-large {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  color: white;
+  max-width: 100%;
+  margin: 0 auto 8px;
+  text-align: center;
+  position: relative;
+  left: -5px;
+}
+
+.discount__card-description-large_highlight {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #FCB500;
+  max-width: 100%;
+  margin-bottom: 0;
+  position: relative;
+  left: -1px;
+}
+
+.discount__order-button {
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  background-color: #FCB500;
+  border-radius: 7px;
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 56px;
+}
+
+@media screen and (max-width: 1280px) {
+  .discount {
+    min-height: calc(100vh - 680px);
+  }
+
+  .discount__cards-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .discount {
+    min-height: calc(100vh - 535px);
+  }
+
+  .discount__cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .discount__card-image {
+    margin-bottom: 20px;
+  }
+
+  .discount__title {
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .discount {
+    min-height: calc(100vh - 410px);
+    padding: 60px 0;
+  }
+
+  .discount__title {
+    font-size: 25px;
+    line-height: 25px;
+    max-width: 450px;
+  }
+
+  .discount__price {
+    font-size: 30px;
+    width: max-content;
+  }
+
+  .discount__price_old {
+    font-size: 25px;
+    width: max-content;
+  }
+
+  .discount__price_old::before {
+    width: 100%;
+  }
+
+  .discount__price-container {
+    gap: 30px;
+    margin-bottom: 20px;
+    left: 0;
+  }
+
+  .discount__card-image {
+    width: 120px;
+    height: max-content;
+  }
+
+  .discount__card-image_large {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .discount {
+    min-height: calc(100vh - 338px);
+  }
+
+  .discount__cards-container {
+    gap: 20px;
+  }
+
+  .discount__card-image {
+    margin-bottom: 20px;
+  }
+
+  .discount__title {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .discount__price {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .discount__price_old {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .discount__price-container {
+    gap: 20px;
+  }
+
+  .discount__card-image {
+    width: 100px;
+  }
+
+  .discount__card-image_large {
+    width: 250px;
+  }
+
+  .discount__card-description-large {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+
+  .discount__card-description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .discount__order-button {
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
